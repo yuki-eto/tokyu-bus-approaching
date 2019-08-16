@@ -9,6 +9,7 @@ import (
 
 	"github.com/PuerkitoBio/goquery"
 	"github.com/martinlindhe/notify"
+	tokyu_bus_approaching "github.com/yuki-eto/tokyu-bus-approaching"
 )
 
 const AppName = "TokyuBusNotification"

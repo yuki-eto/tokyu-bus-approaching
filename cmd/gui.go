@@ -11,6 +11,7 @@ import (
 	"fyne.io/fyne/app"
 	"fyne.io/fyne/widget"
 	"github.com/PuerkitoBio/goquery"
+	tokyu_bus_approaching "github.com/yuki-eto/tokyu-bus-approaching"
 )
 
 func main() {
