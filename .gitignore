@@ -13,3 +13,8 @@
 
 .idea
 
+config.yml
+
+build/*
+!build/build.sh
+

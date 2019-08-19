@@ -9,7 +9,7 @@ import (
 
 	"github.com/PuerkitoBio/goquery"
 	"github.com/martinlindhe/notify"
-	tokyu_bus_approaching "github.com/yuki-eto/tokyu-bus-approaching"
+	tokyuBusApproaching "github.com/yuki-eto/tokyu-bus-approaching"
 )
 
 const AppName = "TokyuBusNotification"
@@ -34,7 +34,7 @@ func main() {
 }
 
 func run() error {
-	infos := tokyu_bus_approaching.NewApproachInformationList()
+	infos := tokyuBusApproaching.NewApproachInformationList()
 
 	urls := []string{
 		// 渋谷駅（中目黒方面）行き
@@ -70,7 +70,7 @@ func run() error {
 		}
 	}
 
-	infos.Each(func(info *tokyu_bus_approaching.ApproachInformation) {
+	infos.Each(func(info *tokyuBusApproaching.ApproachInformation) {
 		log.Print(info)
 		if info.RemainMinutes < 3 || info.RemainMinutes > 5 {
 			return
